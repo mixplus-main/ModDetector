@@ -1,0 +1,33 @@
+name: ModDetector
+description: $description
+version: '${version}'
+
+main: com.mixplus.plugin.modDetector.ModDetector
+api-version: '1.21.8'
+load: POSTWORLD
+
+
+commands:
+  modcheck:
+    description: checkmods
+    usage: /modchect
+    permission: mixplus.moddetector.check
+    permission-message: "§cYou do not have permission."
+
+  moddetector:
+    description: ModDetector command
+    usage: Please use /moddetector [reload|opBypass|check|checkOnly] [boolean|username].
+    permission: mixplus.moddetector.admin
+    permission-message: "§cYou do not have permission."
+    aliases:
+      - md
+
+
+depend:
+  - packetevents
+
+
+permissions:
+  mixplus.moddetector.actionBypass:
+    description: Bypass mod detector actions
+    default: op

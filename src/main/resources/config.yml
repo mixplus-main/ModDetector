@@ -1,0 +1,65 @@
+check-rate: 4
+check-dealy: 3
+
+
+opBypass: true
+warmup: 3
+
+
+# $player$ - Player name
+# $mod$    - Detected mod name
+# $mods$   - All detected mod names
+mods:
+  freelook:
+    name: "freelook"
+    key: "freelook.key.activate"
+    mode: "none"
+    action: ""
+
+  viaFabricPlus:
+    name: "ViaFabricPlus"
+    key: "modmenu.descriptionTranslation.viafabricplus"
+    mode: "console"
+    action: "kick $player$ You have been kicked for using $mod$."
+
+  autoReconnect:
+    name: "AutoReconnect"
+    key: "autoreconnectrf.name"
+    mode: "console"
+    action: "kick $player$ You have been kicked for using $mod$."
+
+  jade:
+    name: "Jade"
+    key: "modmenu.nameTranslation.jade"
+    mode: "console"
+    action: "kick $player$ You have been kicked for using $mod$."
+
+  journeyMap:
+    name: "journeyMap"
+    key: "jm.advanced.announcemod"
+    mode: "console"
+    action: "kick $player$ You have been kicked for using $mod$."
+
+  freeCam:
+    name: "FreeCam"
+    key: "category.freecam.freecam"
+    mode: "console"
+    action: "ban $player$ You have been banned for using $mod$."
+
+  meteorClient:
+    name: "meteor Client"
+    key: "key.meteor-client.open-gui"
+    mode: "console"
+    action: "ban $player$ You have been banned for using $mod$."
+
+  worstClient:
+    name: "Worst Client"
+    key: "description.wurst.hack.aimassist"
+    mode: "console"
+    action: "ban $player$ You have been banned for using $mod$."
+
+  playerESP:
+    name: "Player ESP"
+    key: "key.playeresp.toggle"
+    mode: "console"
+    action: "ban $player$ You have been banned for using $mod$."
